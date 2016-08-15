@@ -34,3 +34,7 @@
 - Execute seu teste sem um **expect** dentro, isso funciona como um **sanity check** e ajuda a saber que tudo está indo bem.
 
 - A coisa mais importante é focar no comportamento geral da função que vai ser testada e não nos detalhes de implementação ainda.
+
+- Normalmente, testes unitários possuem apenas uma expectation.
+
+-

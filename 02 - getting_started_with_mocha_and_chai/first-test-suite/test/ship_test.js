@@ -91,8 +91,23 @@ describe('damageShip', function() {
     });
 });
 
-describe('fireOnShip', function() {
-    // var fireOnShip = require('../game_logic/ship_methods').fireOnShip;
+describe('fire', function() {
+    var fire = require('../game_logic/ship_methods').fire;
+
+    it('should recorder damage on the given player ship at a given coordinate', function() {
+        var player = {
+            ships: [
+                {
+                    locations: [[0, 0]],
+                    damage: []
+                }
+            ]
+        };
+
+        fire(player, [0, 0]);
+
+        expect(player.ships[0].damage[0]).to.deep.equal([0, 0]);
+    });
 });
 
 // um método para os jogadores chamarem

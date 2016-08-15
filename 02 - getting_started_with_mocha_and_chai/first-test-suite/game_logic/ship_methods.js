@@ -8,8 +8,9 @@ function checkForShip(player, coordinates) {
             return (actualCoordinate[0] === coordinates[0]) && (actualCoordinate[1] === coordinates[1]);
         })[0];
 
+        // se existir algum navio, retorne-o
         if (shipPresent) {
-            return true;
+            return ship;
         }
     }
 
@@ -20,7 +21,15 @@ function damageShip(ship, coordinates) {
     ship.damage.push(coordinates);
 }
 
+function fire(player, coordinates) {
+    var ship = checkForShip(player, coordinates);
+
+    if (ship) {
+        damageShip(ship, coordinates);
+    }
+}
 
 // Modules export
 module.exports.checkForShip = checkForShip;
 module.exports.damageShip = damageShip;
+module.exports.fire = fire;

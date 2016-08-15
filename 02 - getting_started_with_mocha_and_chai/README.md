@@ -1,4 +1,4 @@
-## Gettings Started with Mocha and Chai
+## Getting Started with Mocha and Chai
 
 - Para instalar: `npm install --save-dev mocha chai`
 

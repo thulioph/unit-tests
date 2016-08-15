@@ -90,3 +90,14 @@ describe('damageShip', function() {
         expect(ship.damage[0]).to.deep.equal([0, 0]); // vê se o primeiro elemento do array é igual a [0, 0]
     });
 });
+
+describe('fireOnShip', function() {
+    // var fireOnShip = require('../game_logic/ship_methods').fireOnShip;
+});
+
+// um método para os jogadores chamarem
+// que "dispara um tiro" no navio do oponente
+// usando checkForShip para confirmar o suposto ataque do jogador
+// e usando damageShip para registrar um dano para o oponente
+// utilizando alguns métodos de assertions da api do Chai
+//
